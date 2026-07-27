@@ -14,7 +14,6 @@ ini_set('session.use_only_cookies', 1);
 ini_set('session.cookie_samesite', 'Lax');
 
 // Database credentials (XAMPP defaults)
-<?php
 define('DB_HOST', getenv('DB_HOST') ?: 'localhost');
 define('DB_NAME', getenv('DB_NAME') ?: 'club_management');
 define('DB_USER', getenv('DB_USER') ?: 'root');
