@@ -23,3 +23,4 @@ define('DB_CHARSET', 'utf8mb4');
 
 // Application constants
 define('APP_NAME', 'Elite Club Management Portal');
+define('APP_URL', getenv('APP_URL') ?: 'https://club-management-oshq.onrender.com');
