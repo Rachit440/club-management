@@ -15,6 +15,7 @@ ini_set('session.cookie_samesite', 'Lax');
 
 // Database credentials (XAMPP defaults)
 define('DB_HOST', getenv('DB_HOST') ?: 'localhost');
+define('DB_PORT', getenv('DB_PORT') ?: '3306');
 define('DB_NAME', getenv('DB_NAME') ?: 'club_management');
 define('DB_USER', getenv('DB_USER') ?: 'root');
 define('DB_PASS', getenv('DB_PASS') ?: '');
@@ -22,16 +23,3 @@ define('DB_CHARSET', 'utf8mb4');
 
 // Application constants
 define('APP_NAME', 'Elite Club Management Portal');
-define('APP_URL', 'http://localhost/club-management');
-define('UPLOAD_DIR', __DIR__ . '/../assets/uploads/');
-define('UPLOAD_URL', APP_URL . '/assets/uploads/');
-define('DEFAULT_AVATAR', APP_URL . '/assets/images/avatar.png');
-define('SESSION_TIMEOUT', 1800); // 30 minutes
-
-// Timezone
-date_default_timezone_set('Asia/Kolkata');
-
-// Start session once
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
